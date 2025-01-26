@@ -1,5 +1,5 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Mail, Github, Twitter, Linkedin } from "lucide-react";
+import { Mail, Linkedin } from "lucide-react";
 
 export default function Contact() {
   const socials = [
@@ -8,18 +8,6 @@ export default function Contact() {
       label: "Email",
       href: "mailto:john.doe@university.edu",
       value: "john.doe@university.edu"
-    },
-    {
-      icon: <Github className="h-5 w-5" />,
-      label: "GitHub",
-      href: "https://github.com/johndoe",
-      value: "@johndoe"
-    },
-    {
-      icon: <Twitter className="h-5 w-5" />,
-      label: "Twitter",
-      href: "https://twitter.com/johndoe",
-      value: "@johndoe"
     },
     {
       icon: <Linkedin className="h-5 w-5" />,
