@@ -5,16 +5,16 @@ import { ExternalLink } from "lucide-react";
 export default function ProjectExperience() {
   const projects = [
     {
-      title: "Enterprise ML Pipeline",
-      description: "Developed and maintained production-grade machine learning pipelines for processing large-scale data.",
-      technologies: ["Python", "TensorFlow", "Kubernetes", "GitLab CI/CD"],
-      link: "https://gitlab.com/company-projects/ml-pipeline"
+      title: "Project 1",
+      description: "Description of your first major project showcasing your ML/software engineering skills.",
+      technologies: ["Python", "TensorFlow", "Docker", "GitHub Actions"],
+      link: "https://github.com/yourusername/project-1"
     },
     {
-      title: "Automated Trading System",
-      description: "Built a high-frequency trading system with real-time market data processing and automated decision making.",
-      technologies: ["Python", "NumPy", "PostgreSQL", "Redis"],
-      link: "https://gitlab.com/company-projects/trading-system"
+      title: "Project 2",
+      description: "Description of your second major project demonstrating practical implementation skills.",
+      technologies: ["Python", "PyTorch", "FastAPI", "Redis"],
+      link: "https://github.com/yourusername/project-2"
     }
   ];
 
