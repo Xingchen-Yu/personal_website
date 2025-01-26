@@ -19,9 +19,8 @@ export default function Hero() {
           </a>
         </div>
       </div>
-
+      
       <div className="w-48 h-48 md:w-64 md:h-64 rounded-full overflow-hidden shadow-xl">
-        {/* Replace the src URL below with your image URL */}
         <img
           src="https://images.unsplash.com/photo-1573496799515-eebbb63814f2"
           alt="Professional headshot"
