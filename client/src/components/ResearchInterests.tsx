@@ -4,21 +4,26 @@ export default function ResearchInterests() {
   const interests = [
     {
       title: "Large Language Models",
-      description: "Exploring architectural innovations and training methodologies for more efficient and capable language models."
+      description:
+        "Exploring architectural innovations and training methodologies for more efficient and capable language models.",
     },
     {
       title: "Statistical Learning Theory",
-      description: "Developing theoretical frameworks for understanding deep learning generalization and optimization."
+      description:
+        "Developing theoretical frameworks for understanding deep learning generalization and optimization.",
     },
     {
-      title: "Deep Learning Systems",
-      description: "Building scalable and efficient deep learning systems for real-world applications."
-    }
+      title: "Explainable Deep Learning Systems",
+      description:
+        "Building scalable and efficient deep learning systems for real-world applications.",
+    },
   ];
 
   return (
     <section className="mb-16">
-      <h2 className="text-3xl font-bold tracking-tight mb-8">Research Interests</h2>
+      <h2 className="text-3xl font-bold tracking-tight mb-8">
+        Research Interests
+      </h2>
       <div className="grid md:grid-cols-3 gap-6">
         {interests.map((interest, index) => (
           <Card key={index}>
