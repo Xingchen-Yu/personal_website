@@ -6,21 +6,21 @@ export default function Contact() {
     {
       icon: <Mail className="h-5 w-5" />,
       label: "Email",
-      href: "mailto:john.doe@university.edu",
-      value: "john.doe@university.edu"
+      href: "mailto:xvy5021@gmail.com",
+      value: "xvy5021@gmail.com",
     },
     {
       icon: <Github className="h-5 w-5" />,
       label: "GitHub",
-      href: "https://github.com/johndoe",
-      value: "Website & Projects Repository"
+      href: "https://github.com/Xingchen-Yu",
+      value: "Website & Projects Repository",
     },
     {
       icon: <Linkedin className="h-5 w-5" />,
       label: "LinkedIn",
-      href: "https://linkedin.com/in/johndoe",
-      value: "John Doe"
-    }
+      href: "https://www.linkedin.com/in/xingchenyu90",
+      value: "Xingchen Yu",
+    },
   ];
 
   return (
@@ -40,7 +40,9 @@ export default function Contact() {
                 {social.icon}
                 <div>
                   <div className="font-medium">{social.label}</div>
-                  <div className="text-sm text-muted-foreground">{social.value}</div>
+                  <div className="text-sm text-muted-foreground">
+                    {social.value}
+                  </div>
                 </div>
               </a>
             ))}

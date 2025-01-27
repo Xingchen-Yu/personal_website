@@ -4,34 +4,37 @@ import { FileDown } from "lucide-react";
 
 export default function CV() {
   const sections = {
-    education: [
-      {
-        degree: "Ph.D. in Computer Science",
-        institution: "Stanford University",
-        year: "2018-2023",
-        details: "Thesis: Advanced Architectures for Large Language Models"
-      },
-      {
-        degree: "M.S. in Statistics",
-        institution: "MIT",
-        year: "2016-2018",
-        details: "Focus: Statistical Learning Theory"
-      }
-    ],
     experience: [
       {
         title: "Research Scientist",
         organization: "AI Research Lab",
         year: "2023-Present",
-        details: "Leading research in LLM architectures and training methodologies"
+        details:
+          "Leading research in LLM architectures and training methodologies",
       },
       {
         title: "Machine Learning Engineer",
         organization: "Tech Company",
         year: "2018-2020",
-        details: "Developed production ML systems for recommendation engines"
-      }
-    ]
+        details: "Developed production ML systems for recommendation engines",
+      },
+    ],
+    education: [
+      {
+        degree: "Ph.D. in Statistical Science",
+        institution: "University of California, Santa Cruz, CA",
+        year: "2015-2020",
+        details:
+          "Dissertation: Spherical Latent Factor Model for Binary and Ordinal Data",
+      },
+      {
+        degree: "M.S. in Applied Statistics",
+        institution: "MIT",
+        year: "2013-2015",
+        details:
+          "Thesis: Topic Uncovering and Image Annotation via Scalable Probit Normal Correlated Topic Models",
+      },
+    ],
   };
 
   return (
@@ -54,9 +57,13 @@ export default function CV() {
                   <div className="flex justify-between items-start">
                     <div>
                       <h3 className="font-semibold">{item.degree}</h3>
-                      <p className="text-muted-foreground">{item.institution}</p>
+                      <p className="text-muted-foreground">
+                        {item.institution}
+                      </p>
                     </div>
-                    <span className="text-sm text-muted-foreground">{item.year}</span>
+                    <span className="text-sm text-muted-foreground">
+                      {item.year}
+                    </span>
                   </div>
                   <p className="mt-2 text-sm">{item.details}</p>
                 </div>
@@ -74,9 +81,13 @@ export default function CV() {
                   <div className="flex justify-between items-start">
                     <div>
                       <h3 className="font-semibold">{item.title}</h3>
-                      <p className="text-muted-foreground">{item.organization}</p>
+                      <p className="text-muted-foreground">
+                        {item.organization}
+                      </p>
                     </div>
-                    <span className="text-sm text-muted-foreground">{item.year}</span>
+                    <span className="text-sm text-muted-foreground">
+                      {item.year}
+                    </span>
                   </div>
                   <p className="mt-2 text-sm">{item.details}</p>
                 </div>
