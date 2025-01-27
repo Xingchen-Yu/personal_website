@@ -3,7 +3,7 @@ import { cn } from "@/lib/utils";
 
 function getBasePath() {
   if (import.meta.env.DEV) return "";
-  return import.meta.env.BASE_URL || "";
+  return "/XingchenYu.github.io";
 }
 
 export default function Navbar() {
@@ -16,6 +16,12 @@ export default function Navbar() {
     { href: "/publications", label: "Publications" },
     { href: "/blog", label: "Blog" }
   ];
+
+  // Helper function to check if a route is active
+  const isActive = (path: string) => {
+    const currentPath = location.replace(base, "");
+    return currentPath === path || (path === "/" && currentPath === "");
+  };
 
   return (
     <nav className="border-b bg-white/95 backdrop-blur supports-[backdrop-filter]:bg-white/60">
@@ -32,7 +38,7 @@ export default function Navbar() {
                 href={`${base}${item.href}`}
                 className={cn(
                   "text-sm font-medium transition-colors hover:text-primary",
-                  location === `${base}${item.href}` ? "text-primary" : "text-muted-foreground"
+                  isActive(item.href) ? "text-primary" : "text-muted-foreground"
                 )}
               >
                 {item.label}
