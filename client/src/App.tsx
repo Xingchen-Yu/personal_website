@@ -14,9 +14,12 @@ function getBasePath() {
   return "/XingchenYu.github.io";  
 }
 
-function useHashLocation() {
-  const [loc] = useLocation();
-  return [loc.replace(getBasePath(), "") || "/"];
+function useBasePath() {
+  const [location] = useLocation();
+  const base = getBasePath();
+  // Remove the base path from the location
+  const path = location.startsWith(base) ? location.slice(base.length) : location;
+  return path || "/";
 }
 
 function Router() {
