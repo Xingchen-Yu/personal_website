@@ -10,24 +10,21 @@ import Blog from "@/pages/Blog";
 import Navbar from "@/components/Navbar";
 
 function getBasePath() {
-  if (import.meta.env.DEV) return "";
-  return "/XingchenYu.github.io";  
-}
-
-function useBasePath() {
-  const [location] = useLocation();
-  const base = getBasePath();
-  // Remove the base path from the location
-  const path = location.startsWith(base) ? location.slice(base.length) : location;
-  return path || "/";
+  if (window.location.hostname === 'localhost' || window.location.hostname === '0.0.0.0') {
+    return "";
+  }
+  return "/XingchenYu.github.io";
 }
 
 function Router() {
+  const [location] = useLocation();
+  const base = getBasePath();
+
   return (
     <div className="min-h-screen flex flex-col bg-background">
       <Navbar />
       <main className="flex-grow container mx-auto px-4 py-8">
-        <Switch base={getBasePath()}>
+        <Switch base={base}>
           <Route path="/" component={Home} />
           <Route path="/cv" component={CV} />
           <Route path="/publications" component={Publications} />

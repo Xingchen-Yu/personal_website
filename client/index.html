@@ -5,7 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Dr. Xingchen Yu</title>
     <meta name="description" content="Personal website of Dr. Xingchen Yu - Machine Learning and Software Engineering Expert" />
-    <base href="%BASE_URL%" />
+    <script>
+      // Dynamically set the base href
+      (function() {
+        var baseUrl = '/XingchenYu.github.io/';
+        if (window.location.hostname === 'localhost' || window.location.hostname === '0.0.0.0') {
+          baseUrl = '/';
+        }
+        document.write('<base href="' + baseUrl + '" />');
+      })();
+    </script>
   </head>
   <body>
     <div id="root"></div>

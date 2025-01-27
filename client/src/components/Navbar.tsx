@@ -2,7 +2,9 @@ import { Link, useLocation } from "wouter";
 import { cn } from "@/lib/utils";
 
 function getBasePath() {
-  if (import.meta.env.DEV) return "";
+  if (window.location.hostname === 'localhost' || window.location.hostname === '0.0.0.0') {
+    return "";
+  }
   return "/XingchenYu.github.io";
 }
 
@@ -19,8 +21,8 @@ export default function Navbar() {
 
   // Helper function to check if a route is active
   const isActive = (path: string) => {
-    const currentPath = location.replace(base, "");
-    return currentPath === path || (path === "/" && currentPath === "");
+    if (location === base && path === "/") return true;
+    return location === base + path;
   };
 
   return (
