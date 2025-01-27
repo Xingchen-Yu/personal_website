@@ -8,10 +8,9 @@
     <script>
       // Dynamically set the base href
       (function() {
-        var baseUrl = '/XingchenYu.github.io/';
-        if (window.location.hostname === 'localhost' || window.location.hostname === '0.0.0.0') {
-          baseUrl = '/';
-        }
+        var baseUrl = window.location.pathname.includes('/XingchenYu.github.io') 
+          ? '/XingchenYu.github.io/' 
+          : '/';
         document.write('<base href="' + baseUrl + '" />');
       })();
     </script>

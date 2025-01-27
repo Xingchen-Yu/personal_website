@@ -10,10 +10,9 @@ import Blog from "@/pages/Blog";
 import Navbar from "@/components/Navbar";
 
 function getBasePath() {
-  if (window.location.hostname === 'localhost' || window.location.hostname === '0.0.0.0') {
-    return "";
-  }
-  return "/XingchenYu.github.io";
+  // Check if we're on GitHub Pages
+  const isGitHubPages = window.location.hostname.includes('github.io');
+  return isGitHubPages ? "/XingchenYu.github.io" : "";
 }
 
 function Router() {
