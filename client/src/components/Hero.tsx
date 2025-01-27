@@ -8,21 +8,28 @@ export default function Hero() {
           Advancing Machine Learning Research
         </h1>
         <p className="text-xl text-muted-foreground mb-6">
-          Specializing in Large Language Models, Statistical Learning Theory, and Deep Learning
+          Specializing in Large Language Models, Statistical Learning Theory,
+          and Deep Learning
         </p>
         <div className="flex gap-4">
-          <a href="#contact" className="inline-flex items-center justify-center rounded-md bg-primary px-6 py-3 text-sm font-medium text-primary-foreground shadow transition-colors hover:bg-primary/90">
+          <a
+            href="#contact"
+            className="inline-flex items-center justify-center rounded-md bg-primary px-6 py-3 text-sm font-medium text-primary-foreground shadow transition-colors hover:bg-primary/90"
+          >
             Contact Me
           </a>
-          <a href="/cv" className="inline-flex items-center justify-center rounded-md border border-input bg-background px-6 py-3 text-sm font-medium shadow-sm transition-colors hover:bg-accent hover:text-accent-foreground">
+          <a
+            href="/cv"
+            className="inline-flex items-center justify-center rounded-md border border-input bg-background px-6 py-3 text-sm font-medium shadow-sm transition-colors hover:bg-accent hover:text-accent-foreground"
+          >
             View CV
           </a>
         </div>
       </div>
-      
+
       <div className="w-48 h-48 md:w-64 md:h-64 rounded-full overflow-hidden shadow-xl">
         <img
-          src="https://images.unsplash.com/photo-1573496799515-eebbb63814f2"
+          src="/IMG_1484.jpg"
           alt="Professional headshot"
           className="w-full h-full object-cover"
         />
